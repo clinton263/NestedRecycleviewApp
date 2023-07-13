@@ -19,10 +19,10 @@ object SampleData {
 
     )
     val collections = listOf(
-        MainModel("All Movie" , movieModel),
-        MainModel("Want to see" , movieModel.reversed()),
-        MainModel("Popular Movie" , movieModel.shuffled()),
-        MainModel("Top Rated Movie" , movieModel)
+        MainModel("All Movie", movieModel,),
+        MainModel("Want to see", movieModel.reversed(),),
+        MainModel("Popular Movie", movieModel.shuffled(),),
+        MainModel("Top Rated Movie", movieModel,)
 
     )
 }

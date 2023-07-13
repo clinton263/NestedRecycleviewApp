@@ -1,7 +1,9 @@
 package com.clinton.nestedrecycleviewapp.model
 
-class MainModel (
+class MainModel(
     val title: String,
-            val movieModel: List<MovieModel>
+    val movieModel: List<MovieModel>,
+    val movieModels: List<MovieModel>
 )
+
 

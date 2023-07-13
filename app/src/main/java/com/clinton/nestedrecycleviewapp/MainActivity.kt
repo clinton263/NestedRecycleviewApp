@@ -7,9 +7,10 @@ import com.clinton.nestedrecycleviewapp.adapter.MainAdapter
 import com.clinton.nestedrecycleviewapp.databinding.ActivityMainBinding
 import com.clinton.nestedrecycleviewapp.utils.SampleData
 
-private var Nothing?.adapter: MainAdapter
-    get() {}
-    set() {}
+
+
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
 
             val rvMain = null
-            rvMain.adapter=MainAdapter(SampleData.collections)
+            MainAdapter(SampleData.collections).also { rvMain.adapter = it }
         }
 
     }
